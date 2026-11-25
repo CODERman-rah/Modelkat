@@ -58,12 +58,11 @@ header {
 
 .hero {
     position: relative;
-
-
 }
 
 .heroImg {
     width: 100%;
+    display: block;
     border-radius: 10px;
     border-style: double;
     border-color: aquamarine;
@@ -74,7 +73,7 @@ header {
     top: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     right: 8%;
-    width: 30%;
+    width: 42%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -83,22 +82,31 @@ header {
 }
 
 .heroText h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: clamp(16px, 3.2vw, 45px);
+    margin: 0 0 clamp(6px, 1.4vw, 20px);
 }
 
 .heroButton {
     display: inline-block;
     width: fit-content;
-    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: clamp(6px, 1.4vw, 20px);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: clamp(11px, 1.4vw, 20px);
     font-weight: bolder;
     background-color: rgb(22, 22, 77);
     color: aqua;
     text-decoration: none;
     border-radius: 8px;
     border-style: double;
+}
+
+@media (max-width: 600px) {
+    .heroText {
+        right: 6%;
+        width: 88%;
+    }
 }
 
 
