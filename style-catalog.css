@@ -1,0 +1,109 @@
+.webBody {
+    background-color: rgb(22, 22, 77);
+    background-image: url(BGimage.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    background-color: lightskyblue;
+    padding-left: 10px;
+    min-height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    border-color: aquamarine;
+    border-style: double;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.brandname {
+    margin: 0;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(13, 13, 44);
+}
+
+.navcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.navbutton {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: rgb(22, 22, 77);
+    color: aqua;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+}
+
+.productCatalog{
+    width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(22, 22, 77);
+    border: double aquamarine;
+    border-radius: 15px;
+}
+
+.productCatalog h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: lightskyblue;
+    font-size: 55px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.catalogContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.catalogCard {
+    flex: 100px;
+    box-sizing: border-box;
+    padding: 15px 8px;
+    background-color: rgb(22, 22, 77);
+    border: double aquamarine;
+    border-radius: 10px;
+    color: lightskyblue;
+    font-family: 'Courier New', Courier, monospace;
+}    
+
+.catalogCard img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.catalogCard h3 {
+    font-size: 12px 17px;
+}
+
+.price {
+    font-family: 'Courier New', Courier, monospace;
+    color: aqua;
+    font-size: 22px;
+}
